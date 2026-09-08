@@ -1,0 +1,10 @@
+parameter,value,description
+ambient_temp,20.0,deg C the furnace cools toward when off
+setpoint,70.0,target temperature to hold
+cooling_coeff,0.1,passive heat-loss rate per step
+power_off,0.0,heat added by action 0 (off)
+power_low,5.0,heat added by action 1 (holds setpoint at equilibrium)
+power_high,8.0,heat added by action 2 (heats up fast)
+energy_weight,0.02,penalty per unit of heater power in the reward
+noise_std,0.3,random disturbance on the temperature each step
+episode_steps,60.0,steps per control episode
